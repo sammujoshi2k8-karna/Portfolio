@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samarth Joshi | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading-state">
+
+<div id="intro-screen">
+  <div class="intro-icons"><span>&lt;/&gt;</span><span>AI</span><span>◎</span></div>
+  <h1>Welcome to my<br>Portfolio Website</h1>
+  <p>Building systems that feel alive.</p>
+  <button id="enter-btn" class="btn neon">Enter portfolio</button>
+</div>
+
+<div id="app" class="hidden">
+  <header class="nav">
+    <a class="logo" href="#hero">SJ · Samarth</a>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#" id="nav-about-trigger">About</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span id="live-clock">--:--</span>
+  </header>
+
+  <section id="hero">
+    <div class="floor"></div>
+    <h1 class="giant">SAMARTH</h1>
+    <p class="tag">Creating systems<br>that feel alive.</p>
+    <div class="portrait"><img src="profile.jpg" alt="Samarth Joshi"></div>
+    <p class="sub">Turning logic into software, visuals and<br><b>machine learning that works.</b></p>
+    <span class="loc">Hubballi → Bengaluru</span>
+  </section>
+
+  <div class="marquee"><div><span>AIML Student</span><span>Software Dev</span><span>UI Designer</span><span>Video Editor</span><span>AIML Student</span><span>Software Dev</span><span>UI Designer</span><span>Video Editor</span></div></div>
+
+  <section id="intro">
+    <div class="intro-text">
+      <p class="avail"><i></i>Available for projects</p>
+      <h2>AI/ML Engineer<br><em>&amp; Creative Dev</em></h2>
+      <p class="lead">First-year B.Tech at Sapthagiri NPS University. Exploring neural networks, building clean interfaces and editing video.</p>
+      <div class="chips"><span>Python</span><span>C</span><span>SQL</span><span>HTML &amp; CSS</span><span>UI/UX</span></div>
+      <div class="row">
+        <button id="toggle-id-badge" class="btn danger">HIDE CARD</button>
+        <button id="open-about-modal" class="btn neon">ABOUT ME</button>
+      </div>
+      <p class="hint">Drag the ID card. Double-click (or double-tap) to flip it.</p>
+    </div>
+
+    <div id="badge-wrapper" class="badge-wrap show">
+      <canvas id="lanyard"></canvas>
+      <div id="id-card" class="id-card">
+        <div class="id-inner">
+          <div class="face front">
+            <i class="slot"></i>
+            <img src="profile.jpg" alt="Samarth Joshi" draggable="false">
+            <h4>Samarth Joshi</h4>
+            <p>ID: 2026-AIML-01</p>
+            <p>Dept of Computer Science &amp; AIML</p>
+            <div class="bars"></div>
+          </div>
+          <div class="face back">
+            <i class="slot"></i>
+            <h4>Sapthagiri NPS<br>University</h4>
+            <p>B.Tech · AI &amp; ML</p>
+            <p>Python · C · SQL</p>
+            <p>UI · Video · Web</p>
+            <div class="bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase">
+    <h2 class="title">Portfolio Showcase</h2>
+    <div class="tabs">
+      <button class="tab-btn" data-tab="projects">Projects</button>
+      <button class="tab-btn" data-tab="certs">Certificates</button>
+      <button class="tab-btn active" data-tab="stack">Tech Stack</button>
+    </div>
+
+    <div class="tab-panel" id="tab-projects">
+      <div class="grid2">
+        <a class="tilt proj" href="https://github.com/sammujoshi2k8-karna" target="_blank" rel="noopener">
+          <small>Web &amp; AI</small><h3>Cinematic Developer Identity</h3>
+          <p>This portfolio: a dark, neon, interactive site with a physics-based ID card.</p>
+          <div class="chips"><span>HTML5</span><span>CSS3</span><span>Vanilla JS</span></div>
+        </a>
+        <a class="tilt proj" href="https://github.com/sammujoshi2k8-karna" target="_blank" rel="noopener">
+          <small>Algorithms</small><h3>Core Problem Solving Engine</h3>
+          <p>Python and C data structures, LeetCode solutions and logic practice.</p>
+          <div class="chips"><span>Python</span><span>C</span><span>SQL</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-certs">
+      <p class="empty">Certifications and hackathons are in progress at Sapthagiri NPS University. They will appear here as you earn them.</p>
+    </div>
+
+    <div class="tab-panel active" id="tab-stack">
+      <div class="stack">
+        <div class="tilt tile" style="--c:#3776ab">Python</div><div class="tilt tile" style="--c:#00f0ff">C</div>
+        <div class="tilt tile" style="--c:#ff9d00">SQL</div><div class="tilt tile" style="--c:#ff5a2b">HTML5</div>
+        <div class="tilt tile" style="--c:#2b8bff">CSS3</div><div class="tilt tile" style="--c:#ffe600">JS</div>
+        <div class="tilt tile" style="--c:#ff3b30">Git</div><div class="tilt tile" style="--c:#c9a7ff">GitHub</div>
+        <div class="tilt tile" style="--c:#2bb0ff">VS Code</div><div class="tilt tile" style="--c:#7dff3c">Terminal</div>
+        <div class="tilt tile" style="--c:#b06bff">Premiere</div><div class="tilt tile" style="--c:#ff2bd6">UI / UX</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-text">
+      <h2 class="title left">Let's build together</h2>
+      <p class="lead">Have an idea, project or collaboration in mind? Send a message and let's make something clean and modern.</p>
+      <div class="socials">
+        <a href="mailto:samarthjoshi2k8@gmail.com">Email</a>
+        <a href="https://github.com/sammujoshi2k8-karna" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/sxmmu_61" target="_blank" rel="noopener">X</a>
+        <a href="https://www.instagram.com/6amarth_josh1" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <form id="contact-form" class="form">
+      <h3>Send message</h3>
+      <input id="f-name" placeholder="Your name" required>
+      <textarea id="f-msg" placeholder="Write your message" rows="5" required></textarea>
+      <button class="btn neon" type="submit">SEND MESSAGE</button>
+      <p class="reply"><i></i>Usually replies within a few hours</p>
+    </form>
+  </section>
+
+  <footer>© 2026 All rights reserved · Created by Samarth Joshi</footer>
+</div>
+
+<div id="about-modal" class="modal">
+  <button id="close-about-modal" class="btn back">← Back</button>
+  <div class="about-card">
+    <img src="profile.jpg" alt="Samarth Joshi">
+    <h3>Samarth Joshi</h3>
+    <h2><span id="about-title"></span><i class="caret"></i></h2>
+    <div class="about-body">
+      <p>I'm a first-year B.Tech student in <b>Artificial Intelligence &amp; Machine Learning</b> at <b>Sapthagiri NPS University, Bengaluru</b>. I'm originally from Hubballi, and I came into software through curiosity and visual arts.</p>
+      <p>I'm learning Python, C and SQL, and I use modern AI developer tools to speed up my real-world web experiments.</p>
+      <p>Beyond code, I care about <b>UI design, videography and video editing</b>. For me software isn't only logic: it's about experiences that look sharp, feel alive and solve real problems.</p>
+    </div>
+    <a class="btn neon" href="mailto:samarthjoshi2k8@gmail.com?subject=Resume%20Request">Download Resume</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
